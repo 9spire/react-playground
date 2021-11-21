@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Activities from "./activities";
-import { Button, Input, Box } from "@mui/material";
+import { Button, Input, Box, Typography } from "@mui/material";
 
 const Greeting = () => {
   return <Headline />;
@@ -38,21 +38,25 @@ const Headline = () => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "column", width: "100%" },
+          border: "1px solid #ccc",
+          borderRadius: "5px",
+          m: 1,
+          p: 1,
         }}
       >
-        <h1>Hello {greeting} </h1>
-        <p>Your age is {age}</p>
+        <Typography variant="h1">Hello {greeting}</Typography>
+        <Typography variant="h3">You may have {age} years</Typography>
         <Input
           value={greeting}
           placeholder={"Enter your name"}
           type="text"
           onChange={updateText}
-          sx={{ mb: "2rem" }}
+          sx={{ my: "2rem" }}
           fullWidth={true}
           variant="outlined"
         />
         <Button variant="outlined" onClick={handleButtonClick}>
-          Get information
+          Guess Your Age
         </Button>
       </Box>
       <Box
