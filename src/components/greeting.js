@@ -28,7 +28,6 @@ const Headline = () => {
         console.log("error! " + error);
       }
     };
-
     fetchAge();
   };
 

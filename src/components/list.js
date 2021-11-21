@@ -14,6 +14,7 @@ const List = () => {
     }
   };
 
+  // need a dependency to limit rerenders
   useEffect(() => {
     fetchActivities();
   }, []);

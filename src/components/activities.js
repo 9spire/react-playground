@@ -2,7 +2,7 @@ import React from "react";
 import List from "./list";
 import { Box, Typography } from "@mui/material";
 
-let number = 3;
+let number = 5;
 
 const Activities = () => {
   return (
