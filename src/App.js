@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 
 import Greeting from "./components/greeting";
 import UsersList from "./components/userslist";
+import Activities from "./components/activities";
 
 function App() {
   return (
@@ -14,9 +15,19 @@ function App() {
           flexDirection: { xs: "column", md: "row" },
         }}
       >
-        <Greeting />
+        <>
+          <Greeting />
+          <Activities />
+        </>
       </Box>
-      <UsersList />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
+        <UsersList />
+      </Box>
     </Container>
   );
 }

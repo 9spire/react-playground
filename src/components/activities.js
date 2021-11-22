@@ -10,12 +10,12 @@ const Activities = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "column", width: "100%" },
+          flexDirection: { xs: "column", md: "column" },
           border: "1px solid #ccc",
           borderRadius: "5px",
           m: 1,
           p: 1,
-          height: "100%",
+          width: "100%",
         }}
       >
         <Typography variant="h2">Don't be Bored...</Typography>
