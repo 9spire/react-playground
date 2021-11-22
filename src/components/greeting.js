@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Input, Box, Typography } from "@mui/material";
+import { Button, TextField, Box, Typography } from "@mui/material";
 
 const Greeting = () => {
   const [greeting, setGreeting] = useState();
@@ -40,9 +40,10 @@ const Greeting = () => {
     >
       <Typography variant="h2">Hello {greeting}</Typography>
       <Typography variant="h4">Are you {age}?</Typography>
-      <Input
+      <TextField
+        label={"Name"}
         value={greeting}
-        placeholder={"Enter your name"}
+        defaultValue={"Enter your name"}
         type="text"
         onChange={updateText}
         sx={{ my: "2rem" }}
