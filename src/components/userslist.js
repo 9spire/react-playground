@@ -16,7 +16,6 @@ const UsersList = () => {
           m: 1,
           p: 1,
           width: "100%",
-          backgroundColor: "#f7f7f7",
         }}
       >
         <Typography variant="h2" sx={{ pb: 1 }}>

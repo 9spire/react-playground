@@ -38,8 +38,8 @@ const Greeting = () => {
         width: "100%",
       }}
     >
-      <Typography variant="h1">Hello {greeting}</Typography>
-      <Typography variant="h3">You may have {age} years</Typography>
+      <Typography variant="h2">Hello {greeting}</Typography>
+      <Typography variant="h4">Are you {age}?</Typography>
       <Input
         value={greeting}
         placeholder={"Enter your name"}
@@ -49,7 +49,7 @@ const Greeting = () => {
         fullWidth={true}
         variant="outlined"
       />
-      <Button variant="outlined" onClick={handleButtonClick}>
+      <Button variant="contained" onClick={handleButtonClick}>
         Guess Your Age
       </Button>
     </Box>

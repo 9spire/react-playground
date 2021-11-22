@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardContent, CardMedia, Typography, Link } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Link as Href,
+} from "@mui/material";
 
 const User = () => {
   const [users, setUsers] = useState();
@@ -34,9 +40,7 @@ const User = () => {
             {users.name.first} {users.name.last}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            <Link underline="hover" href={`mailto:${users.email}`}>
-              {users.email}
-            </Link>
+            <Href underline="hover">{users.email}</Href>
           </Typography>
         </CardContent>
       </Card>

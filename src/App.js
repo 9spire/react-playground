@@ -1,35 +1,26 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
 
-import Greeting from "./components/greeting";
-import UsersList from "./components/userslist";
-import Activities from "./components/activities";
+import Menu from "./components/menu";
+import Home from "./components/home";
+import About from "./components/about";
 
-function App() {
+const App = () => {
   return (
-    <Container>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-        }}
-      >
-        <>
-          <Greeting />
-          <Activities />
-        </>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-        }}
-      >
-        <UsersList />
-      </Box>
-    </Container>
+    <>
+      <Menu />
+      <Container>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Router>
+      </Container>
+    </>
   );
-}
+};
 
 export default App;

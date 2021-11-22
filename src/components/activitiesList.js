@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const List = () => {
+const ActivitiesList = () => {
   const [activity, setActivity] = useState();
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const List = () => {
   return <li key={Math.random()}>{activity}</li>;
 };
 
-export default List;
+export default ActivitiesList;
