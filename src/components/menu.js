@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Box, Toolbar, Typography, Link as Goto } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Menu() {
   return (
@@ -27,6 +28,12 @@ export default function Menu() {
                 About
               </Goto>
             </Typography>
+            <Goto
+              href="https://github.com/9spire/react-playground"
+              target="_blank"
+            >
+              <GitHubIcon sx={{ fontSize: 20, color: "white", px: 2 }} />
+            </Goto>
           </Toolbar>
         </AppBar>
       </Box>
