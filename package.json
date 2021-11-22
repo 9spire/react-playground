@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000",
-  "homepage": "http://9spire.github.io/react-playground",
+  "homepage": "https://rebeccadittmar.com/react-playground",
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
