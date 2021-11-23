@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Box, Toolbar, Typography, Link as Goto } from "@mui/material";
+import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Menu() {
@@ -14,9 +15,11 @@ export default function Menu() {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              <Goto href="/" underline="hover" color="white">
-                React Playground
-              </Goto>
+              <Link to="/">
+                <Goto underline="hover" color="white">
+                  React Playground
+                </Goto>
+              </Link>
             </Typography>
             <Typography
               variant="p"
@@ -24,9 +27,11 @@ export default function Menu() {
               component="div"
               sx={{ display: { xs: "block" } }}
             >
-              <Goto href="about" underline="hover" color="white">
-                About
-              </Goto>
+              <Link to="/about">
+                <Goto underline="hover" color="white">
+                  About
+                </Goto>
+              </Link>
             </Typography>
             <Goto
               href="https://github.com/9spire/react-playground"

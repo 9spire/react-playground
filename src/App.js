@@ -9,17 +9,17 @@ import About from "./components/about";
 
 const App = () => {
   return (
-    <>
-      <Menu />
-      <Container>
-        <Router>
+    <Router basename="/">
+      <>
+        <Menu />
+        <Container>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
-        </Router>
-      </Container>
-    </>
+        </Container>
+      </>
+    </Router>
   );
 };
 
