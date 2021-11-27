@@ -25,11 +25,23 @@ export default function Menu() {
               variant="p"
               noWrap
               component="div"
-              sx={{ display: { xs: "block" } }}
+              sx={{ display: { xs: "block" }, px: 2 }}
             >
               <Link to="/about">
                 <Goto underline="hover" color="white">
                   About
+                </Goto>
+              </Link>
+            </Typography>
+            <Typography
+              variant="p"
+              noWrap
+              component="div"
+              sx={{ display: { xs: "block" }, px: 2 }}
+            >
+              <Link to="/game">
+                <Goto underline="hover" color="white">
+                  Game
                 </Goto>
               </Link>
             </Typography>
